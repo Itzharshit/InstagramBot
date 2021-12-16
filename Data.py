@@ -4,31 +4,24 @@ from pyrogram.types import InlineKeyboardButton
 class Data:
     # Start Message
     START = """
-Hey {}
-
-Welcome to {}
-
-I can download profile pictures, videos, images and reels from instagram along with post caption.
+Hii {},
+I am instagram Downloader bot i can download profile pictures, videos, images and reels from instagram with caption.
 You can also authorize me to download private posts.
-
-Use below buttons to learn more.
-
-By @StarkBots
     """
 
     # Home Button
     home_buttons = [
-        [InlineKeyboardButton(text="🏠 Return Home 🏠", callback_data="home")]
+        [InlineKeyboardButton(text="Return Home", callback_data="home")]
     ]
 
     # Rest Buttons
     buttons = [
-        [InlineKeyboardButton("✨ Bot Status and More Bots ✨", url="https://t.me/StarkBots/7")],
+        [InlineKeyboardButton("YouTube", url="https://youtube.com/channel/UC2anvk7MNeNzJ6B4c0SZepw")],
         [
-            InlineKeyboardButton("How to Use ❔", callback_data="help"),
-            InlineKeyboardButton("🎪 About 🎪", callback_data="about")
+            InlineKeyboardButton("Help", callback_data="help"),
+            InlineKeyboardButton("Support Group", url="https://t.me/+7ScFy39Vckk5MWQ1")
         ],
-        [InlineKeyboardButton("♥ More Amazing bots ♥", url="https://t.me/StarkBots")],
+        [InlineKeyboardButton("Updates Channel", url="https://t.me/pyrogrammers")],
     ]
 
     # Help Message
@@ -52,13 +45,11 @@ Use /auth to authorize and /unauth to unauthorize.
     ABOUT = """
 **About This Bot** 
 
-A telegram bot to download instagram content by @StarkBots
-
-Source Code : [Click Here](https://github.com/StarkBotsIndustries/InstagramBot)
+A telegram bot to download instagram 
 
 Framework : [Pyrogram](docs.pyrogram.org)
 
 Language : [Python](www.python.org)
 
-Developer : @StarkProgrammer
+Developer : @pyrogrammers
     """
